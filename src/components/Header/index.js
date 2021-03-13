@@ -1,15 +1,37 @@
 import React from "react";
+//import { capitalizeFirstLetter } from "../../utils/helpers";
 
-const Header = () => {
+const Header = (props) => {
+
+  const { currentPage, handlePageChange } = props;
+
+
   return (
-    <div className="jumbotron">
-      <h1 className="display-4">Hello, world!</h1>
-      <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr className="my-4" />
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <span class="navbar-brand">Riley Beach</span>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li className={currentPage === "About" ? "nav-link navActive" : "nav-link mx-2"}>
+              <span onClick={() => handlePageChange("About")}>About Me</span>
+            </li>
+            <li className={currentPage === "Portfolio" ? "nav-link navActive" : "nav-link mx-2"}>
+              <span onClick={() => handlePageChange("Portfolio")}>Portfolio</span>
+            </li>
+            <li className={currentPage === "Contact" ? "nav-link navActive" : "nav-link mx-2"}>
+              <span onClick={() => handlePageChange("Contact")}>Contact Me</span>
+            </li>
+            <li className={currentPage === "Resume" ? "nav-link navActive" : "nav-link mx-2"}>
+              <span onClick={() => handlePageChange("Resume")}>Resume</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  )
+  );
 }
 
 export default Header;
+
