@@ -26,6 +26,7 @@ const App = () => {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
         {displayPage()}
+
       </main>
       <Footer />
     </div>
