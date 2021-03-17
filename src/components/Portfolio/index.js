@@ -1,5 +1,8 @@
 import React from 'react'
 import plentyofpups from '../../assets/images/plentyofpups.png';
+import notetaker from '../../assets/images/note-taker.png';
+import teamprofile from '../../assets/images/teamprofile.png';
+import budgettracker from '../../assets/images/budgettracker.png';
 
 const projects = [
   {
@@ -11,19 +14,19 @@ const projects = [
   {
     title: "Budget Tracker",
     description: "A PWA budget tracker that allows the user to keep track of their expenses, even offline.",
-    image: plentyofpups,
+    image: budgettracker,
     url: "https://github.com"
   },
   {
     title: "Note Taker",
     description: "A standard app for creating, editing, and deleting personal notes.",
-    image: plentyofpups,
+    image: notetaker,
     url: "https://github.com"
   },
   {
     title: "Team Profile Generator",
     description: "A node generator where businesses can build their teams into a visual layout.",
-    image: plentyofpups,
+    image: teamprofile,
     url: "https://github.com"
   }
 ]
