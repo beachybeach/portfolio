@@ -6,8 +6,8 @@ const About = () => {
     <div class="media mp-0 about-me">
       <div className="me"></div>
       <div class="media-body">
-        <h5 class="mt-0">Media heading</h5>
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        <h5 class="mt-0">Riley Beach</h5>
+    Hello, my name is Riley Beach and I am an aspiring full stack web developer from Phoenix, Arizona. Along with coding, I have my bachelors in Sales & Marketing through Arizona State University
           </div>
     </div >
   );
