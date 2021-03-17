@@ -5,20 +5,21 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 const App = () => {
   const [currentPage, handlePageChange] = useState("About");
 
   const displayPage = () => {
     switch (currentPage) {
-      case "About":
-        return <About />;
       case "Portfolio":
         return <Portfolio />;
       case "Contact":
         return <Contact />;
+      case "Resume":
+        return <Resume />;
       default:
-        return null;
+        return <About />;
     }
   }
   return (
